@@ -21,12 +21,12 @@ body{
 }
 
 header{
-    padding: 5px 10px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
-    font-size: 2rem;
-    height: 50px;
+    font-size: 1.5rem;
+    height: 60px;
     align-items: center;
 }
 
@@ -37,9 +37,9 @@ header{
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 2px solid #b3b3b3;
-    width: 200px;
-    height: 200px;
-    margin: 40px auto;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
 }
 
 .nav-toggle{
@@ -73,27 +73,27 @@ header{
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .container p{
     color: white;
     font-weight: 300;
     font-size: 1.4rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button{
     color: white;
-    padding: 20px;
+    padding: 10px;
     background-color: #221767;
     border: 1px solid var(--bitcoin-orange);
     border-radius: 20px;
     font-weight: 700;
     font-size: 1.5rem;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 80%;
 }
