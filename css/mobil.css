@@ -1,0 +1,99 @@
+:root{
+    /* Colores */
+    --bitcoin-orange: #FFB550;
+    --justwhite: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#221767;
+    font-size: 2.5rem;
+}
+
+header{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 2rem;
+    height: 50px;
+    align-items: center;
+}
+
+.foto{
+    background-image: url('../img/foto.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #b3b3b3;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+}
+
+.nav-toggle{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgba(225, 225, 225, .2);
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    color: var(--bitcoin-orange);
+    text-align: center;
+    font-size: 2.5rem;
+    font-size: 700;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container h2{
+    color: white;
+    font-size: 2rem;
+    font-size: 700;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container p{
+    color: white;
+    font-weight: 300;
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button{
+    color: white;
+    padding: 20px;
+    background-color: #221767;
+    border: 1px solid var(--bitcoin-orange);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    width: 80%;
+}
