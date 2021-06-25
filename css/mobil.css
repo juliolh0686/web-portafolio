@@ -25,7 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     height: 60px;
     align-items: center;
 }
@@ -37,9 +37,9 @@ header{
     background-repeat: no-repeat;
     border-radius: 50%;
     border: 2px solid #b3b3b3;
-    width: 150px;
-    height: 150px;
-    margin: 30px auto;
+    width: 180px;
+    height: 180px;
+    margin: 10px auto;
 }
 
 .nav-toggle{
@@ -79,8 +79,8 @@ header{
 .container p{
     color: white;
     font-weight: 300;
-    font-size: 1.4rem;
-    width: 95%;
+    font-size: 1.6rem;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
@@ -96,4 +96,5 @@ header{
     font-size: 1.5rem;
     margin-top: 20px;
     width: 80%;
+    height: 40px;
 }
