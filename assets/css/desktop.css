@@ -1,0 +1,189 @@
+:root{
+    /* Colores */
+    --bitcoin-orange: #FFB550;
+    --justwhite: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #221767;
+    font-size: 2.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    height: 60px;
+    align-items: center;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: auto 200px;
+    height: 100%;
+    align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.foto{
+    background-image: url('../img/foto_sin_fondo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-left: 40px;
+}
+
+
+.container h1{
+    color: var(--bitcoin-orange);
+    font-size: 2.8rem;
+    font-size: 700;
+    width: 70%;
+}
+
+.container h2{
+    color: white;
+    font-size: 2.2rem;
+    font-size: 700;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.container p{
+    color: white;
+    font-weight: 300;
+    font-size: 1.9rem;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.button{
+    color: white;
+    padding: 10px;
+    background-color: #221767;
+    border: 1px solid var(--bitcoin-orange);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(34, 23, 103,0.9);
+    position: fixed;
+    left: 0;
+    top:60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.nav-menu-item{
+    font-size: 1.8rem;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: var(--justwhite);
+    text-decoration: none;
+
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background:none;
+    color: var(--bitcoin-orange);
+}
+
+.nav-menu_visible{
+    left: 0;
+}
+
+.nav-toggle:focus:not(:focus-visible){
+    outline: none;
+}
+
+
+.menuright {
+    position: fixed;
+    left: 100%;
+    top: 50%;
+    transform: translate(-150%,-50%);
+    overflow:hidden;
+}
+
+.menuright__button {
+    width: 50px;
+    height: 50px;
+    background-color: #BDBBB8;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    margin-top: 15px;
+    font-size: 3rem;
+}
+
+.menuright__button:hover {
+   background-color: var(--bitcoin-orange);
+   transform: scale(.9);
+   transition-duration: .3s;
+}
+
+.menuright__button--activo {
+    background-color: var(--bitcoin-orange);
+}
+
+.menuright__button i {
+    color: #FFFFFF;
+    width: 50px;
+}
+
+.presentacion {
+    margin: auto;
+    max-width: 800px;
+}

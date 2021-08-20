@@ -151,3 +151,7 @@ header{
 .nav-toggle:focus:not(:focus-visible){
     outline: none;
 }
+
+.menuright {
+    display: none;
+}

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mobil.css">
+    <link rel="stylesheet" href="./assets/css/mobil.css" media="only screen and (max-width: 900px)">
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 900px)" />
     <script src="https://kit.fontawesome.com/4b3f15bb31.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
-    <script defer src="js/index.js"></script>
-    <title>JCreativos</title>
+    <title>Julio Loarte</title>
 </head>
 <body>
     <header>
-        <div class="logo">Jcreativos</div>
+        <div class="logo">Julio Loarte</div>
         <button class="nav-toggle" aria-label="Abrir Menú"><i class="fas fa-bars"></i></button>
         <ul class="nav-menu">
             <li class="nav-menu-item"><a class="nav-menu-link nav-menu-link_active" href="">Home</a></li>
@@ -25,11 +25,22 @@
     </header>
     <section class="container">
         <section class="foto"></section>
-        <h1>HOLA!! ME LLAMO JULIO LOARTE</h1>
-        <h2>FULL STACK DEVELOPER</h2>
-        <p>Profesional titulado en la carrera de Ingeniería de Sistemas y Computo.<p>
-        <p>Con conocimientos en el desarrollo de aplicaciones y páginas Web. Amante de la tecnología y la música, y me gusta compartir los conocimientos adquiridos.</p>
-        <button class="button">Cuéntame sobre tu idea</button>
+        <section class="presentacion">
+            <h1>HOLA!! ME LLAMO JULIO LOARTE</h1>
+            <h2>FULL STACK DEVELOPER</h2>
+            <p>Profesional titulado en la carrera de Ingeniería de Sistemas y Computo.<p>
+            <p>Con conocimientos en el desarrollo de aplicaciones y páginas Web. Amante de la tecnología y la música, y me gusta compartir los conocimientos adquiridos.</p>
+            <button class="button">Cuéntame sobre tu idea</button>
+        </section>
+        <nav class="menuright">
+            <ul>
+                <li class="menuright__button menuright__button--activo"><i class="fas fa-home"></i></li>
+                <li class="menuright__button"><i class="fas fa-user"></i></li>
+                <li class="menuright__button"><i class="fas fa-briefcase"></i></li>
+                <li class="menuright__button"><i class="fas fa-envelope"></i></li>
+            </ul>
+        </nav>
     </section>
+    <script defer src="./assets/js/index.js"></script>
 </body>
 </html>
