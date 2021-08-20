@@ -1,0 +1,112 @@
+@forward  'colors';
+@use 'colors';
+@use 'medias';
+
+header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: colors.$colorTextoPrimario;
+    font-size: 1.6rem;
+    height: 60px;
+    align-items: center;
+    @include medias.for-desktop-up {   
+        display: grid;
+        grid-template-columns: repeat(20,1fr);
+        grid-template-rows: repeat(4,1fr);
+        height: 140px;
+        padding: 0;
+     }
+     .logo {
+        @include medias.for-desktop-up {   
+            grid-column: 2 / 5;
+            grid-row: 3;
+            font-size: 25px;
+         }
+     }
+     .cuadro01 {
+        @include medias.for-desktop-up {   
+            width: 70px;
+            height: 70px;
+            background-color: rgba(colors.$colorTextoPrimario, 0.1);
+            grid-column: 19 / 21;
+            grid-row: 1 / 3;
+         }
+     }
+     .cuadro02 {
+        @include medias.for-desktop-up {   
+            width: 50px;
+            height: 50px;
+            background-color: rgba(colors.$colorTextoPrimario, 0.1);
+            grid-column: 18 / 19;
+            grid-row: 3 / 4;
+         }
+     }
+     .cuadro03 {
+        @include medias.for-desktop-up {   
+            width: 100%;
+            height: 2px;
+            background-color: rgba(colors.$colorTextoPrimario, 0.1);
+            grid-column: 2 / 20;
+            grid-row: 4 / 5;
+         }
+     }
+    .nav-toggle {
+        width: 40px;
+        height: 40px;
+        color: colors.$colorTextoPrimario;
+        background-color: rgba(colors.$colorTerneario, .2);
+        font-size: 20px;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        @include medias.for-desktop-up {   
+            display: none;
+         }
+    }
+    .nav-toggle:hover {
+        background-color: rgba(colors.$colorCuaternario, .2);
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background-color: rgba(colors.$colorPrimario,0.9);
+        position: fixed;
+        left: 0;
+        top:60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        font-size: 1.8rem;
+        margin: 0 10px;
+        line-height: 70px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 3px;
+        color: colors.$colorTextoPrimario;
+        text-decoration: none;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background:none;
+        color: colors.$colorSecundario;
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+}

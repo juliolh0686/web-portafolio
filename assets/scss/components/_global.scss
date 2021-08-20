@@ -1,0 +1,18 @@
+@use 'colors';
+
+//Globales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: colors.$colorPrimario;
+    font-size: 2.5rem;
+}
