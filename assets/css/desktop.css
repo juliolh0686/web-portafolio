@@ -24,13 +24,42 @@ body{
 }
 
 header{
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(4,1fr);
     color: #FFFFFF;
     font-size: 1.6rem;
-    height: 60px;
+    height: 140px;
     align-items: center;
+}
+
+.logo {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.cuadro01 {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 19 / 21;
+    grid-row: 1 / 3;
+}
+
+.cuadro02 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 18 / 19;
+    grid-row: 3 / 4;
+}
+
+.cuadro03 {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 2 / 20;
+    grid-row: 4 / 5;
 }
 
 .nav-toggle{
@@ -45,10 +74,10 @@ header{
     display: flex;
     justify-content: center;
     padding: auto 200px;
-    height: 100%;
     align-items: center;
     max-width: 2000px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .foto{
@@ -101,7 +130,7 @@ header{
 }
 
 .nav-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     list-style: none;
@@ -186,4 +215,36 @@ header{
 .presentacion {
     margin: auto;
     max-width: 800px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(4,1fr);
+    color: #FFFFFF;
+    height: 140px;
+}
+
+.cuadrof01 {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+}
+
+.cuadrof02 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.cuadrof03 {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: 2 / 20;
+    grid-row: 1 / 2;
 }
