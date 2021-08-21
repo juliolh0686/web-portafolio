@@ -1,0 +1,51 @@
+@use 'colors' as *;
+@use 'medias';
+
+.personalinfo {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    max-width: 320px;
+    @include medias.for-desktop-up {   
+        width: 30%;
+        margin: 50px 0;
+     }
+    h2 {
+        margin: 15px auto;
+        @include medias.for-desktop-up {   
+            text-align: center;
+            margin: initial;
+         }
+    }
+    &__detalle {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        &--left {
+            width: 50%;
+            text-align: left;
+            padding-right: 15px;
+        }
+        &--right {
+            width: 50%;
+            text-align: left;
+            border-left-style: solid;
+            border-left-width: 2px;
+            border-color: $colorSecundario;
+            padding-left: 15px;
+        }
+        p {
+            color: #FFFFFF;
+            margin: initial;
+            text-align: initial;
+            font-size: 1.2rem;
+            line-height: 4;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: $colorSecundario;
+        }
+    }
+
+}

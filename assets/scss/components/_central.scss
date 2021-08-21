@@ -4,16 +4,19 @@
 
 
 .container{
-    text-align: center;
     margin: 0 auto;
     @include medias.for-desktop-up {   
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         padding: auto 200px;
         max-width: 2000px;
         margin: 0 auto;
-        margin-top: 50px;
         text-align: initial;
+        padding: 0 70px;
+     }
+     .presentacion {
+         text-align: center;
      }
     .foto{
         background-image: url('../img/foto.png');
@@ -29,7 +32,7 @@
             background-image: url('../img/foto_sin_fondo.png');
             border-radius: 0;
             border: none;
-            width: 600px;
+            width: 40%;
             height: 600px;
             margin: auto;
             margin-left: 50px;
@@ -38,7 +41,7 @@
     .presentacion {
         @include medias.for-desktop-up {   
             margin: auto;
-            max-width: 900px;
+            width: 50%;
          }
     }
     h1 {

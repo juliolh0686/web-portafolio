@@ -1,0 +1,50 @@
+@use 'colors' as *;
+@use 'medias';
+
+.container-education {
+    h2 {
+        @include medias.for-desktop-up {   
+            text-align: center;
+         }
+    }
+    .education {
+        width: 80%;
+        margin: 30px auto;
+        position: relative;
+        padding-left: 30px;
+        text-align: initial;
+        .linea {
+            width: 1px;
+            height: 85%;
+            background-color: $colorSecundario;
+            position: absolute;
+            top: 15px;
+            left: -1px;
+        }
+        .circulo {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $colorSecundario;
+            border-radius: 50%;
+            left: -15px;
+            top: 8px;
+        }
+        span {
+            font-size: 1.5rem;
+            color: $colorSecundario;
+            background-color: rgba($colorOpcional, 0.2);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        h3 {
+            color: $colorTextoPrimario;
+            font-size: 1.8rem;
+        }
+        p {
+            margin: initial;
+            text-align: initial;
+            color: $colorOpcional;
+        }
+    }
+}

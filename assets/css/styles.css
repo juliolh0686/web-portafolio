@@ -39,11 +39,18 @@ header {
     padding: 0;
   }
 }
+header .logo {
+  font-size: 1.8rem;
+}
+header .logo span {
+  color: #FFB550;
+  margin-left: 5px;
+}
 @media (min-width: 1200px) {
   header .logo {
     grid-column: 2/5;
     grid-row: 3;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -115,6 +122,7 @@ header .nav-menu {
   left: 100%;
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
+  z-index: 100;
 }
 header .nav-menu-item {
   font-size: 1.8rem;
@@ -144,7 +152,6 @@ header .nav-toggle:focus:not(:focus-visible) {
 }
 
 .container {
-  text-align: center;
   margin: 0 auto;
 }
 @media (min-width: 1200px) {
@@ -155,12 +162,17 @@ header .nav-toggle:focus:not(:focus-visible) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: auto 200px;
     max-width: 2000px;
     margin: 0 auto;
-    margin-top: 50px;
     text-align: initial;
+    padding: 0 70px;
   }
+}
+.container .presentacion {
+  text-align: center;
 }
 .container .foto {
   background-image: url("../img/foto.png");
@@ -178,7 +190,7 @@ header .nav-toggle:focus:not(:focus-visible) {
     background-image: url("../img/foto_sin_fondo.png");
     border-radius: 0;
     border: none;
-    width: 600px;
+    width: 40%;
     height: 600px;
     margin: auto;
     margin-left: 50px;
@@ -187,7 +199,7 @@ header .nav-toggle:focus:not(:focus-visible) {
 @media (min-width: 1200px) {
   .container .presentacion {
     margin: auto;
-    max-width: 900px;
+    width: 50%;
   }
 }
 .container h1 {
@@ -330,5 +342,199 @@ footer .cuadrof03 {
   background-color: rgba(255, 255, 255, 0.1);
   grid-column: 2/20;
   grid-row: 1/2;
+}
+
+.personalinfo {
+  margin: 0 auto 30px auto;
+  text-align: center;
+  max-width: 320px;
+}
+@media (min-width: 1200px) {
+  .personalinfo {
+    width: 30%;
+    margin: 50px 0;
+  }
+}
+.personalinfo h2 {
+  margin: 15px auto;
+}
+@media (min-width: 1200px) {
+  .personalinfo h2 {
+    text-align: center;
+    margin: initial;
+  }
+}
+.personalinfo__detalle {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.personalinfo__detalle--left {
+  width: 50%;
+  text-align: left;
+  padding-right: 15px;
+}
+.personalinfo__detalle--right {
+  width: 50%;
+  text-align: left;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-color: #FFB550;
+  padding-left: 15px;
+}
+.personalinfo__detalle p {
+  color: #FFFFFF;
+  margin: initial;
+  text-align: initial;
+  font-size: 1.2rem;
+  line-height: 4;
+  font-weight: bold;
+}
+.personalinfo__detalle h3 {
+  font-size: 1.8rem;
+  color: #FFB550;
+}
+
+@media (min-width: 1200px) {
+  .container-skills-total {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-skills-total h2 {
+    width: 100%;
+    text-align: center;
+    margin: initial;
+    margin: 50px 0;
+  }
+}
+.container-skills-total .container-skills {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .container-skills-total .container-skills {
+    padding: 0 60px;
+  }
+}
+.container-skills-total .container-skills .skill {
+  width: 100px;
+}
+.container-skills-total .container-skills .skill img {
+  width: 50px;
+}
+.container-skills-total .container-skills .skill span {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .container-education h2 {
+    text-align: center;
+  }
+}
+.container-education .education {
+  width: 80%;
+  margin: 30px auto;
+  position: relative;
+  padding-left: 30px;
+  text-align: initial;
+}
+.container-education .education .linea {
+  width: 1px;
+  height: 85%;
+  background-color: #FFB550;
+  position: absolute;
+  top: 15px;
+  left: -1px;
+}
+.container-education .education .circulo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #FFB550;
+  border-radius: 50%;
+  left: -15px;
+  top: 8px;
+}
+.container-education .education span {
+  font-size: 1.5rem;
+  color: #FFB550;
+  background-color: rgba(179, 179, 179, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+.container-education .education h3 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+.container-education .education p {
+  margin: initial;
+  text-align: initial;
+  color: #b3b3b3;
+}
+
+.container .portafolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+.container .portafolio__card {
+  width: 80%;
+  max-width: 300px;
+  height: 200px;
+  background-color: #838383;
+  border-radius: 15px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .container .portafolio__card {
+    width: 300px;
+  }
+}
+.container .portafolio .card-01 {
+  background-image: url("../img/gesrem.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .portafolio span {
+  background-color: rgba(255, 181, 80, 0.8);
+  color: #221767;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
