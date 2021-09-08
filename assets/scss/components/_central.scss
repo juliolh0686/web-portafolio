@@ -17,6 +17,9 @@
      }
      .presentacion {
          text-align: center;
+         @include medias.for-desktop-up {   
+            text-align: initial;
+         }
      }
     .foto{
         background-image: url('../img/foto.png');
@@ -139,6 +142,16 @@
      .menuright__button i {
          color: $colorTerneario;
          width: 50px;
+     }
+     .container-education {
+        @include medias.for-desktop-up {   
+            width: 50%;
+          }
+     }
+     .container-education {
+        @include medias.for-desktop-up {   
+            width: 50%;
+          }
      }
 }
 
