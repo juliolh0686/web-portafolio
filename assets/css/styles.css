@@ -154,7 +154,7 @@ header .nav-toggle:focus:not(:focus-visible) {
 .container .home__titulo h1 {
   -webkit-text-stroke: 1px #FFF;
   color: transparent;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 @media (min-width: 1024px) {
   .container .home__titulo h1 {
