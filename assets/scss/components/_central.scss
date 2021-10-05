@@ -45,26 +45,33 @@
             }
          }
      }
-    // .foto{
-    //     background-image: url('../img/foto.png');
-    //     background-position: center;
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     border-radius: 50%;
-    //     border: 2px solid $colorOpcional;
-    //     width: 180px;
-    //     height: 180px;
-    //     margin: 10px auto;
-    //     @include medias.for-desktop-up {   
-    //         background-image: url('../img/foto_sin_fondo.png');
-    //         border-radius: 0;
-    //         border: none;
-    //         width: 40%;
-    //         height: 600px;
-    //         margin: auto;
-    //         margin-left: 50px;
-    //      }
-    // }
+     .contacto {
+        background-color: $colorCuaternario;
+        padding: 20px 0;
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+            &--input {
+                border: 0;
+                outline:0px;
+                background-color: $colorCuaternario;
+                padding: 10px;
+                border: 2px solid #C4C4C4;
+                margin-bottom: 5px;
+            }
+            &--button {
+                border: 0;
+                outline:0px;
+                background-color: $colorTerneario;
+                padding: 10px;
+                margin-bottom: 5px;
+                color: $colorSecundario;
+            }
+        }
+     }
+    
     .presentacion {
         @include medias.for-desktop-up {   
             margin: auto;

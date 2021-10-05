@@ -58,7 +58,7 @@ header .nav-toggle {
   }
 }
 header .nav-toggle:hover {
-  background-color: rgba(40, 40, 40, 0.2);
+  background-color: rgba(249, 249, 249, 0.2);
 }
 header .nav-menu {
   display: -webkit-box;
@@ -187,6 +187,37 @@ header .nav-toggle:focus:not(:focus-visible) {
     width: 200px;
     font-size: 2rem;
   }
+}
+.container .contacto {
+  background-color: #F9F9F9;
+  padding: 20px 0;
+}
+.container .contacto__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.container .contacto__form--input {
+  border: 0;
+  outline: 0px;
+  background-color: #F9F9F9;
+  padding: 10px;
+  border: 2px solid #C4C4C4;
+  margin-bottom: 5px;
+}
+.container .contacto__form--button {
+  border: 0;
+  outline: 0px;
+  background-color: #0F0F0F;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
 }
 @media (min-width: 1024px) {
   .container .presentacion {
