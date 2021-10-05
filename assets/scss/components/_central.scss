@@ -4,35 +4,28 @@
 
 
 .container{
-    @include medias.for-desktop-up {   
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: auto 200px;
-        max-width: 2000px;
-        margin: 0 auto;
-        text-align: initial;
-        padding: 0 70px;
-     }
      .home {
          display: flex;
          justify-content: center;
          align-items: center;
          background-color: $colorPrimario;
          height: calc(100vh - 60px);
-         @include medias.for-desktop-up {   
-            text-align: initial;
-         }
          &__titulo {
              text-align: center;
             h1 {
                 -webkit-text-stroke: 1px #FFF;
                 color: transparent;
                 font-size: 3rem;
+                @include medias.for-desktop-up {   
+                    font-size: 6rem;
+                 }
             }
             h2 {
                 font-size: 2rem;
                 color: #FFF;
+                @include medias.for-desktop-up {   
+                    font-size: 5rem;
+                 }
             }
             .button{
                 color: $colorTextoPrimario;
@@ -46,7 +39,8 @@
                 height: 40px;
                 cursor: pointer;
                 @include medias.for-desktop-up {   
-                    width: 300px;
+                    width: 200px;
+                    font-size: 2rem;
                   }
             }
          }
