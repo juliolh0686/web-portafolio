@@ -4,7 +4,6 @@
 
 
 .container{
-    margin: 0 auto;
     @include medias.for-desktop-up {   
         display: flex;
         justify-content: center;
@@ -15,98 +14,129 @@
         text-align: initial;
         padding: 0 70px;
      }
-     .presentacion {
-         text-align: center;
+     .home {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: $colorPrimario;
+         height: calc(100vh - 60px);
          @include medias.for-desktop-up {   
             text-align: initial;
          }
-     }
-    .foto{
-        background-image: url('../img/foto.png');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        border: 2px solid $colorOpcional;
-        width: 180px;
-        height: 180px;
-        margin: 10px auto;
-        @include medias.for-desktop-up {   
-            background-image: url('../img/foto_sin_fondo.png');
-            border-radius: 0;
-            border: none;
-            width: 40%;
-            height: 600px;
-            margin: auto;
-            margin-left: 50px;
+         &__titulo {
+             text-align: center;
+            h1 {
+                -webkit-text-stroke: 1px #FFF;
+                color: transparent;
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2rem;
+                color: #FFF;
+            }
+            .button{
+                color: $colorTextoPrimario;
+                padding: 10px;
+                background-color: $colorPrimario;
+                border: 1px solid $colorSecundario;
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-top: 20px;
+                width: 60%;
+                height: 40px;
+                cursor: pointer;
+                @include medias.for-desktop-up {   
+                    width: 300px;
+                  }
+            }
          }
-    }
+     }
+    // .foto{
+    //     background-image: url('../img/foto.png');
+    //     background-position: center;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     border-radius: 50%;
+    //     border: 2px solid $colorOpcional;
+    //     width: 180px;
+    //     height: 180px;
+    //     margin: 10px auto;
+    //     @include medias.for-desktop-up {   
+    //         background-image: url('../img/foto_sin_fondo.png');
+    //         border-radius: 0;
+    //         border: none;
+    //         width: 40%;
+    //         height: 600px;
+    //         margin: auto;
+    //         margin-left: 50px;
+    //      }
+    // }
     .presentacion {
         @include medias.for-desktop-up {   
             margin: auto;
             width: 50%;
          }
     }
-    h1 {
-        color: $colorSecundario;
-        font-size: 2.5rem;
-        font-weight: 700;
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
-        @include medias.for-desktop-up {   
-           font-size: 2.8rem;
-           margin: 0;
-           text-align: initial;
-           margin-bottom: 15px;
-         }
-    }
-    h2{
-        color: $colorTextoPrimario;
-        font-size: 2rem;
-        font-weight: 700;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-        @include medias.for-desktop-up {   
-            font-size: 2.2rem;
-            margin: 0;
-            text-align: initial;
-            margin-bottom: 15px;
-          }
-    }
-    p{
-        color: $colorTextoPrimario;
-        font-weight: 300;
-        font-size: 1.6rem;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-        @include medias.for-desktop-up {   
-            font-size: 1.9rem;
-            margin: 0;
-            text-align: initial;
-            line-height: 1.8;
-          }
-    }
-    .button{
-        color: $colorTextoPrimario;
-        padding: 10px;
-        background-color: $colorPrimario;
-        border: 1px solid $colorSecundario;
-        border-radius: 20px;
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin-top: 20px;
-        width: 80%;
-        height: 40px;
-        cursor: pointer;
-        @include medias.for-desktop-up {   
-            width: 300px;
-          }
-    }
+    // h1 {
+    //     color: $colorSecundario;
+    //     font-size: 2.5rem;
+    //     font-weight: 700;
+    //     width: 70%;
+    //     margin: 0 auto;
+    //     text-align: center;
+    //     @include medias.for-desktop-up {   
+    //        font-size: 2.8rem;
+    //        margin: 0;
+    //        text-align: initial;
+    //        margin-bottom: 15px;
+    //      }
+    // // }
+    // h2{
+    //     color: $colorTextoPrimario;
+    //     font-size: 2rem;
+    //     font-weight: 700;
+    //     width: 80%;
+    //     margin: 0 auto;
+    //     text-align: center;
+    //     margin-top: 10px;
+    //     @include medias.for-desktop-up {   
+    //         font-size: 2.2rem;
+    //         margin: 0;
+    //         text-align: initial;
+    //         margin-bottom: 15px;
+    //       }
+    // }
+    // p{
+    //     color: $colorTextoPrimario;
+    //     font-weight: 300;
+    //     font-size: 1.6rem;
+    //     width: 80%;
+    //     margin: 0 auto;
+    //     text-align: center;
+    //     margin-top: 10px;
+    //     @include medias.for-desktop-up {   
+    //         font-size: 1.9rem;
+    //         margin: 0;
+    //         text-align: initial;
+    //         line-height: 1.8;
+    //       }
+    // }
+    // .button{
+    //     color: $colorTextoPrimario;
+    //     padding: 10px;
+    //     background-color: $colorPrimario;
+    //     border: 1px solid $colorSecundario;
+    //     border-radius: 20px;
+    //     font-weight: 700;
+    //     font-size: 1.5rem;
+    //     margin-top: 20px;
+    //     width: 80%;
+    //     height: 40px;
+    //     cursor: pointer;
+    //     @include medias.for-desktop-up {   
+    //         width: 300px;
+    //       }
+    // }
     .menuright {
         display: none;
         @include medias.for-desktop-up {   
