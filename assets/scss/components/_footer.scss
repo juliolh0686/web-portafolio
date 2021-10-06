@@ -10,9 +10,6 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    @include medias.for-desktop-up {   
-        // display: grid;
-     }
 }
 
 
