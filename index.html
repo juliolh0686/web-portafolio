@@ -12,39 +12,139 @@
     <title>Julio Loarte</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">JL</div>
         <button class="nav-toggle" aria-label="Abrir Menú"><i class="fas fa-bars"></i></button>
         <ul class="nav-menu">
-            <li class="nav-menu-item"><a class="nav-menu-link nav-menu-link_active" href="index.html">Home</a></li>
-            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Sobre mi</a></li>
-            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Portafolio</a></li>
-            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Contacto</a></li>
+            <li class="nav-menu-item"><a class="nav-menu-link nav-menu-link_active" href="#home">Home</a></li>
+            <li class="nav-menu-item"><a class="nav-menu-link" href="#aboutme">About Me</a></li>
+            <li class="nav-menu-item"><a class="nav-menu-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-menu-item"><a class="nav-menu-link" href="#skills">Skills</a></li>
+            <li class="nav-menu-item"><a class="nav-menu-link" href="#contact">Contact</a></li>
         </ul>
     </header>
     <section class="container">
-        <section class="home">
+        <section class="home" id="home">
             <section class="home__titulo">
                 <h1>JULIO LOARTE HUERTO</h1>
                 <h2>Full Stack Developer</h2>
-                <button class="button">Portafolio</button>
+                <button class="button">Portfolio</button>
             </section>
         </section>
-        <section class="contacto">
-            <form class="contacto__form" action="https://formsubmit.co/juliolh06@gmail.com" method="POST">
-                <input class="contacto__form--input" type="text" name="name" placeholder="Name" required>
-                <input class="contacto__form--input" type="email" name="email" placeholder="Email" required>
-                <textarea class="contacto__form--input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button class="contacto__form--button">Enviar Mensaje</button>
-            </form>
-            <section class="contacto__social">
-
+        <section class="aboutme" id="aboutme">
+            <div class="titulo_bloque">About me</div>
+            <section class="aboutme__principal">
+                <picture class="aboutme__foto">
+                    <img src="./assets/img/foto_sin_fondo.png" alt="">
+                </picture>
+                <section class="aboutme__presentacion">
+                    <p>Profesional titulado en la carrera de Ingeniería de Sistemas y Computo.</p>
+                    <p>Con conocimientos en el desarrollo de aplicaciones y páginas Web. Amante de la tecnología y la música, y me gusta compartir los conocimientos adquiridos.</p>
+                    <button class="button--negro">Download CV</button>
+                </section>
+            </section>
+        </section>
+        <section class="portafolio" id="portfolio">
+            <div class="titulo_bloque">Portfolio</div>
+            <section class="portafolio__central">
+                <section class="portafolio__item">
+                    <img src="./assets/img/gesrem.jpg" alt="">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+                <section class="portafolio__item">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+                <section class="portafolio__item">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+                <section class="portafolio__item">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+                <section class="portafolio__item">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+                <section class="portafolio__item">
+                    <section class="portafolio_description"><span>GesRem</span><span>Laravel</span></section>
+                </section>
+            </section>
+        </section>
+        <section class="skills" id="skills">
+            <div class="titulo_bloque">My Skills</div>
+            <section class="skills__container">
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/html5.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>HTML</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/css3.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>CSS</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/javascript.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>Java Script</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/MySQL.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>MySql</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/laravel.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>Laravel</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/github.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>GitHub</span>
+                </section>
+                <section class="skill">
+                    <figure>
+                        <img src="./assets/img/vue.svg" alt="Elephant at sunset">
+                    </figure>
+                    <span>Vue</span>
+                </section>
+            </section>
+        </section>
+        <section class="contact" id="contact">
+            <div class="titulo_bloque">Contact</div>
+            <section class="contact__container">
+                <form class="contact__form">
+                    <input class="contact__form--input" type="text" name="name" placeholder="Name" required>
+                    <input class="contact__form--input" type="email" name="email" placeholder="Email" required>
+                    <textarea class="contact__form--input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button class="contact__form--button">Enviar Mensaje</button>
+                </form>
+                <section class="contact__social">
+                    <section class="email-fono">
+                        <p><i class="fas fa-phone-square-alt"></i> +51966936890</p>
+                        <p><i class="fas fa-envelope-open"></i> juliolh06@gmail.com</p>
+                    </section>
+                    <section class="redes">
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                    </section>
+                </section>
             </section>
         </section>
     </section>
     <footer>
        <p>2021 - Desarrollado por Julio Loarte Huerto</p> 
     </footer>
+    
     <script defer src="./assets/js/index.js"></script>
+
 </body>
 </html>

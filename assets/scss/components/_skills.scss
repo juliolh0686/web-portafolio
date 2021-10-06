@@ -1,39 +1,39 @@
 @use 'colors' as *;
 @use 'medias';
 
-.container-skills-total {
-    @include medias.for-desktop-up {   
-        width: 70%;
-     }
-     h2 {
-        @include medias.for-desktop-up {   
-            width: 100%;
-            text-align: center;
-            margin: initial;
-            margin: 50px 0;
-         }
-     }
-    .container-skills {
-        width: 90%;
-        margin: 30px auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        text-align: center;
-        @include medias.for-desktop-up {   
-            padding: 0 60px;
-         }
-        .skill {
-            width: 100px;
-            img {
-                width: 50px;
-            }
-            span {
-                color: $colorTextoPrimario;
-                font-size: 1.5rem;
-            }
-        }
-    }
+// .container-skills-total {
+//     @include medias.for-desktop-up {   
+//         width: 70%;
+//      }
+//      h2 {
+//         @include medias.for-desktop-up {   
+//             width: 100%;
+//             text-align: center;
+//             margin: initial;
+//             margin: 50px 0;
+//          }
+//      }
+//     .container-skills {
+//         width: 90%;
+//         margin: 30px auto;
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         gap: 20px;
+//         text-align: center;
+//         @include medias.for-desktop-up {   
+//             padding: 0 60px;
+//          }
+//         .skill {
+//             width: 100px;
+//             img {
+//                 width: 50px;
+//             }
+//             span {
+//                 color: $colorTextoPrimario;
+//                 font-size: 1.5rem;
+//             }
+//         }
+//     }
     
-}
+// }
