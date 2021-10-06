@@ -27,3 +27,27 @@ window.onscroll = function () {
         header.classList.remove('menu_flotante');
     }
 }
+
+
+//Formulario
+let formulario = document.getElementById('form_contacto');
+
+formulario.addEventListener('submit', e => {
+    e.preventDefault();
+
+    let datos = new FormData(formulario);
+
+    alert(datos);
+
+    peticion = {
+        method: 'POST',
+        body: datos,
+    }
+
+    fetch ('../../php/envio_correo.php',peticion)
+        .then(respuesta => respuesta.json())
+        .then(respuesta => {
+
+        }).catch(error => console.log('error',error));
+
+});
